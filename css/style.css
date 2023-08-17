@@ -18,6 +18,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  /* width: 100%; */
+  padding: 0 1em;
 }
 
 h1 {
@@ -52,7 +54,7 @@ h1 {
 }
 
 .content {
-  width: 50%;
+  width: 100%;
 }
 
 #taskInput {
@@ -129,14 +131,15 @@ h1 {
 
 #list-elem {
   display: flex;
-  gap: .7em;
+  gap: 0.7em;
   align-items: center;
   margin-bottom: 0.5em;
-  background: #dddcdc;
+  background: #8b8b8b;
   border-radius: 8px;
   margin-left: 10px;
   font-family: cursive;
   font-weight: 300;
+  color: #fff;
 }
 
 #taskList {
@@ -151,6 +154,6 @@ h1 {
   cursor: pointer;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
