@@ -1,0 +1,156 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: #dad9d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 2.3em;
+}
+
+.input-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#addTask {
+  position: absolute;
+  right: 0px;
+  padding: 11px 12px;
+  border: none;
+  outline: none;
+  background: #002626;
+  color: #fff;
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 15px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  cursor: pointer;
+}
+
+.content {
+  width: 50%;
+}
+
+#taskInput {
+  padding: 12px 100px 12px 10px;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: #a2a2a2;
+  color: #fff;
+  border-radius: 8px;
+}
+
+#taskInput:focus {
+  outline-color: #002626;
+  outline-style: solid;
+  outline-width: 2px;
+}
+
+.message {
+  text-align: center;
+  color: red;
+  font-size: 1.2em;
+  font-family: sans-serif;
+  font-weight: 500;
+  padding: 0;
+}
+h3 {
+  border-bottom: 2px solid #002626;
+}
+
+#taskInput::placeholder {
+  color: #efeded;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.fade {
+  color: #bbbbbb;
+}
+
+#btn,
+#edit {
+  padding: 5px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background: #002626;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+#edit:hover {
+  transform: translateY(-5px);
+}
+
+#btn:hover {
+  transform: translateY(-5px);
+}
+
+.h3 {
+  font-size: 1.3em;
+  margin-top: 1em;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1 {
+  margin-bottom: 0.5em;
+  margin-top: 0.6em;
+}
+
+/*  */
+
+#list-elem {
+  display: flex;
+  gap: .7em;
+  align-items: center;
+  margin-bottom: 0.5em;
+  background: #dddcdc;
+  border-radius: 8px;
+  margin-left: 10px;
+  font-family: cursive;
+  font-weight: 300;
+}
+
+#taskList {
+  list-style: none;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+
+#checkbox {
+  width: 30px;
+  margin-left: 7px;
+  cursor: pointer;
+}
+
+.hidden{
+  display: none;
+}
